@@ -58,6 +58,12 @@ export default () =>{
         <span>Direitos de imagem para a <a href="https://www.netflix.com/br/">Netflix</a></span>
         <span>Dados pegos do site <a href="https://www.themoviedb.org">The Movie DB</a></span>
       </footer>
+
+      {movieList.length <= 0 &&
+      <div className="loading">
+        <img src="https://c.tenor.com/I6kN-6X7nhAAAAAj/loading-buffering.gif" alt="carregando"></img>
+      </div>
+      }
     </div>
   );
 }
