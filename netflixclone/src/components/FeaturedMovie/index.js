@@ -29,7 +29,7 @@ export default ({item}) => {
                         <a href={`/watch/${item.id}`} className="featured--watchButton">► Assistir</a>
                         <a href={`/list/add/${item.id}`} className="featured--myListButton">+ Minha Lista</a>
                     </div>
-                    <div className="featured--genres"><strong>Gêneros:</strong> {genres.join(', ')}</div>
+                    <div className="featured--genres"><strong>{genres.length !== 0 ? `Gêneros:` : ""}</strong> {genres.join(', ')}</div>
                 </div>
             </div>
         </section>
